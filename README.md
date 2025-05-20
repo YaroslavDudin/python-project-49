@@ -1,3 +1,3 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/YaroslavDudin/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/YaroslavDudin/python-project-49/actions)
-[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=YaroslavDudin_python-project-49)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=YaroslavDudin_python-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=YaroslavDudin_python-project-49)
