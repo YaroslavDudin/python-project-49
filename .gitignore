@@ -4,3 +4,4 @@ __pycache__
 coverage.xml
 .pytest_cashe
 .coverage
+uv.lock
