@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import prompt
-import random
 import math  
 import secrets
+
 
 def gcd(a, b):
     return math.gcd(a, b)
@@ -49,5 +49,5 @@ if __name__ == '__main__':
 
 
 def random_num(min_val=1, max_val=100):
-    return secrets.randbelow(min_val, max_val)
+    return secrets.randbelow(max_val - min_val) + min_val
 

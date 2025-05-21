@@ -4,6 +4,7 @@ import prompt
 import random
 import secrets
 
+
 def generate_progression(start, step, length=10):
     return [start + i * step for i in range(length)]
 
@@ -55,4 +56,4 @@ if __name__ == '__main__':
 
 
 def random_num(min_val=1, max_val=100):
-    return secrets.randbelow(min_val, max_val)
+    return secrets.randbelow(max_val - min_val) + min_val
