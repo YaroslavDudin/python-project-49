@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import prompt
-import random
 import secrets
 
 
@@ -21,8 +20,7 @@ def main():
         start = secrets.randbelow(20) + 1
         step = secrets.randbelow(5) + 2
         progression = generate_progression(start, step)
-        hidden_index = random.randint(0, len(progression) - 1)  
-
+        hidden_index = secrets.randbelow(len(progression))
         hidden_number = progression[hidden_index]
         progression[hidden_index] = '..'  
 
