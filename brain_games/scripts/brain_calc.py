@@ -13,7 +13,7 @@ def calculate(number1, number2, operator):
     elif operator == '*':
         return number1 * number2
     else:
-        return None  
+        return None
 
 
 def generate_round():
