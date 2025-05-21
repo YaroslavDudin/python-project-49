@@ -42,7 +42,7 @@ def main():
             correct_answers_count += 1
         else:
             print(f"'{answer}' is wrong answer ;(. "
-            f"Correct answer was '{correct_answer}'.")
+            f"Correct answer was '{hidden_number}'.")
     
             print(f"Let's try again, {name}!")
             return
