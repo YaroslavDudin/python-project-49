@@ -1,6 +1,5 @@
 
 from brain_games.scripts.games.brain_calc_game import main
-import random
 import secrets
 
 rules = 'What is the result of the expression?'
