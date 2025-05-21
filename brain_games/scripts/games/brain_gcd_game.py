@@ -18,8 +18,8 @@ def main():
     correct_answers_count = 0
 
     while correct_answers_count < 3:
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
+        num1 = secrets.randbelow(100) + 1
+        num2 = secrets.randbelow(100) + 1
         correct_answer = gcd(num1, num2)
 
         print(f'Question: {num1} {num2}')

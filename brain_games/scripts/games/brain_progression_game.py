@@ -17,8 +17,8 @@ def main():
     correct_answers_count = 0
 
     while correct_answers_count < 3:
-        start = random.randint(1, 20)
-        step = random.randint(2, 5)  
+        start = secrets.randbelow(20) + 1
+        step = secrets.randbelow(5) + 2
         progression = generate_progression(start, step)
         hidden_index = random.randint(0, len(progression) - 1)  
 

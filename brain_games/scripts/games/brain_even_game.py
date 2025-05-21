@@ -16,7 +16,7 @@ def main():
 
     correct_answers_count = 0
     while correct_answers_count < 3:
-        number = random.randint(1, 100)
+        number = secrets.randbelow(100) + 1
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
 
