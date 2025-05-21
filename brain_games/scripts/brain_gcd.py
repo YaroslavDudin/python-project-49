@@ -7,6 +7,7 @@ rules = 'Find the greatest common divisor of given numbers.'
 def gcd(a, b):
     return math.gcd(a, b)
 
+
 def generate_round():
     num1 = random_num(1, 100)
     num2 = random_num(1, 100)

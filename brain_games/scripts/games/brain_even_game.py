@@ -20,7 +20,8 @@ def main():
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
 
-        if (is_even(number) and answer == 'yes') or (not is_even(number) and answer == 'no'):
+        if (is_even(number) == (answer == 'yes')):
+
             print('Correct!')
             correct_answers_count += 1
         else:
@@ -35,7 +36,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 
 
 def random_num(min_val=1, max_val=100):

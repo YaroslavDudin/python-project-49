@@ -12,7 +12,7 @@ def calculate(num1, num2, operator):
     elif operator == '*':
         return num1 * num2
     else:
-        return None  
+        return None
 
 
 def main():
@@ -40,8 +40,6 @@ def main():
             print(f"'{answer}' is not a valid number.  Please enter a number.")
             print(f"Let's try again, {name}!")
             return
-
-
         if answer == correct_answer:
             print('Correct!')
             correct_answers_count += 1
