@@ -2,7 +2,7 @@
 
 import prompt
 import random
-
+import secrets
 
 def calculate(num1, num2, operator):
     if operator == '+':
@@ -25,9 +25,9 @@ def main():
     operators = ['+', '-', '*']  
 
     while correct_answers_count < 3:
-        num1 = random.randint(1, 20)  
-        num2 = random.randint(1, 20)  
-        operator = random.choice(operators)
+        num1 = secrets.randbelow(20) + 1   
+        num2 = secrets.randbelow(20) + 1 
+        operator = secrets.choice(operators)
         expression = f'{num1} {operator} {num2}'
         correct_answer = calculate(num1, num2, operator)
 
@@ -57,4 +57,4 @@ if __name__ == '__main__':
 
 
 def random_num(min_val=1, max_val=100):
-    return random.randint(min_val, max_val)
+    return secrets.randbelow(min_val, max_val)

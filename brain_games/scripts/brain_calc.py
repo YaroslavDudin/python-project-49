@@ -1,6 +1,7 @@
 
 from brain_games.scripts.games.brain_calc_game import main
 import random
+import secrets
 
 rules = 'What is the result of the expression?'
 
@@ -17,10 +18,10 @@ def calculate(number1, number2, operator):
 
 
 def generate_round():
-    number1 = random.randint(1, 25)  
-    number2 = random.randint(1, 11)  
+    number1 = secrets.randbelow(25) + 1  
+    number2 = secrets.randbelow(11) + 1  
     operators = ['+', '-', '*']
-    operator = random.choice(operators)
+    operator = secrets.choice(operators)
 
     question = f'{number1} {operator} {number2}'
     correct_answer = str(calculate(number1, number2, operator))
